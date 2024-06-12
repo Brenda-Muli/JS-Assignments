@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <h1>Upcoming Events</h1>
+    <hr class="headingline">
+
+    <table id="events-table">
+    <thead>
+      <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Location</th>
+      <th>Attendees</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+    </tbody>
+    </table>
+   <br> <br>
+   <div class="buttonEvents">
+    <button class="buttons"
+    onclick="filterEvents()"> Upcoming Events
+    </button>
+
+    <button class=" buttons" 
+    onclick="displayAllEvents()"> Display All Events
+    </button>
+
+    <button class=" buttons"
+    onclick="addAttendee()">Add Attendee
+  </button>
+  </div>
+  <br> <br> <br>
+
+  <div class="deleteButton">
+    <button id="deleteButton" class="buttons"
+    onclick="deleteEvent()"
+    >Delete Event
+  </button>
+  <button id="undoButton" class="buttons"
+    onclick="undo()"
+    >Undo
+  </button>
+  
+  </div>
+    <script src="calendar.js"></script>
+</body>
+</html>
